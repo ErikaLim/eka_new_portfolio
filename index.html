@@ -5,8 +5,7 @@
   <link rel="stylesheet" href="public/src/styles/main.css">
 </head>
 <body>
-  <div class="ui container">
-    <figure class="effect-hera">
+  <figure class="effect-hera">
       <figcaption>
         <h2><span>Erika Megan Lim</span></h2>
         <p>
@@ -23,24 +22,87 @@
         </p>
       </figcaption>
     </figure>
-  </div>
 
-  <div class="ui inverted segment">
-  <div class="ui inverted secondary menu">
-    <a class="active item">
-      Home
-    </a>
-    <a class="item">
-      Messages
-    </a>
-    <a class="item">
-      Friends
-    </a>
-  </div>
-</div>
+    <div id="home" class="page-content">
+
+    </div>
+    <div id="projects" class="panel">
+      <div class="page-content">
+        <p>
+          <div class="ui inverted accordion">
+            <div class="title">
+              <h3>Less Wait For Your Plate-SF
+                <i class="dropdown icon"></i>
+              </h3>
+            </div>
+            <div class="content">
+              <div class="description">
+                A web app that users can use to report wait times for restaurants.  I built both the backend and front-end.  Users of the app can search for restaurants by name or category, and all info comes from the Yelp API.   I also used Mapbox to create a custom map, and when the user clicks on a restaurant in the result list, a marker that has all the restaurant info as well as the last reported wait time appears on the map.
+              </div>
+              <p>
+                <a href="http://less-wait.divshot.io/">
+                  <i class="desktop icon"></i>The Deployed App
+                </a>
+              </p>
+              <p>
+                <a href="https://github.com/ErikaLim/lessWait-frontend">
+                  <i class="github alternate icon"></i>The frontend
+                </a>
+              </p>
+              <p>
+                <a href="https://github.com/ErikaLim/less-wait">
+                  <i class="github alternate icon"></i>The backend
+                </a>
+              </p>
+            </div>
+          </div>
+        </p>
+        <p>
+          <div class="ui inverted accordion">
+            <div class="title">
+              <h3>
+                is.js
+                <i class="dropdown icon"></i>
+              </h3>
+            </div>
+            <div class="content">
+              <div class="description">
+                description
+              </div>
+              <p>
+                <a href="#">
+                  <i class="github alternate icon"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+    <div id="about" class="panel">
+      <div class="page-content">
+        <h2>About Me</h2>
+        <p>
+          content...
+        </p>
+      </div>
+    </div>
+
+    <div id="header" class="">
+      <ul id="navigation">
+        <li><a id="link-home" href="#home">Home</a></li>
+        <li><a id="link-projects" href="#projects">Projects</a></li>
+        <li><a id="link-about" href="#about">About Me</a></li>
+      </ul>
+    </div>
+
+
+
+
 
   <script src="/vendor/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
   <script src="/vendor/node_modules/semantic-ui/dist/semantic.min.js" charset="utf-8"></script>
+  <script src="bower_components/handlebars/handlebars.min.js"charset="utf-8"></script>
   <script src="/public/src/scripts/main.js"charset="utf-8"></script>
 </body>
 </html>
