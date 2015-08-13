@@ -1,1 +1,4 @@
 /vendor
+/.divshot-cache
+/divshot.json
+/error.html
